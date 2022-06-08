@@ -63,7 +63,7 @@ function App() {
     const workbook  = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Date");
     XLSX.utils.sheet_add_aoa(worksheet, [["日付", "取得数量", "評価額","取得額","コスト","利益"]], { origin: "A1" });
-    XLSX.writeFile(workbook, "Presidents.csv");
+    XLSX.writeFile(workbook, "マイニング損益計算.xlsx");
     })  
   }
 
